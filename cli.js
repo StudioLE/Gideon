@@ -1,7 +1,7 @@
 // App modules
 var backup = require('./lib/backup')
 var restore = require('./lib/restore')
-var menu = require('./lib/menu')
+var terminal = require('./lib/terminal')
 
 // Get command line args
 var arg = process.argv.slice(2)
@@ -22,7 +22,7 @@ else if(arg[0] == 'restore') {
 }
 // Invalid
 else {
-  menu('Choose an operation', ['Backup', 'Restore'], function(error, selection, index) {
+  terminal('Choose an operation', ['Backup', 'Restore'], function(error, selection, index) {
     if(selection == 'Backup') {
       backup()
     }
