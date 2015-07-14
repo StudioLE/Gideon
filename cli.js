@@ -22,8 +22,6 @@ else if(arg[0] == 'restore') {
 // Invalid
 else {
   menu('Choose an operation', ['Backup', 'Restore'], function(error, selection, index) {
-    console.log(selection)
-    console.log(index)
     if(selection == 'Backup') {
       backup()
     }
@@ -31,7 +29,7 @@ else {
       restore()
     }
     else {
-      console.log('invalid operation %s', arg[0])
+      process.stdin.end()
     }
   })
 }
