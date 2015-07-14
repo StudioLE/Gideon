@@ -1,3 +1,5 @@
 /node_modules
+/config/local*
 /sample
 /output
+/sftp-config.json

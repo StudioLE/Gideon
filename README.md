@@ -27,6 +27,11 @@ Configuration options are available in `config/default.json`.
 
 At present the following operations are only available from within the gideon directory.
 
+Wizard selection
+```
+node cli
+```
+
 Run the backup wizard
 ```
 node cli backup
@@ -40,6 +45,10 @@ node cli restore
 ## Roadmap / Todo
 
 - [x] Stunning terminal interface
-- [ ] Archive directory
+- [x] Archive directory
 - [ ] Folder filter (bower_components, node_modules, .git)
 - [ ] Mysql Dump
+
+## Contributing
+
+I'm always on the look out for collaborators so feel free to suggest new features, get in touch or just fork at will.

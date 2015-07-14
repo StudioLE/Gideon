@@ -2,12 +2,13 @@
 var backup = require('./lib/backup')
 var restore = require('./lib/restore')
 var terminal = require('./lib/terminal')
+var util = require('./lib/util')
 
 // Get command line args
 var arg = process.argv.slice(2)
 
 // Capture user input
-terminal.init()
+terminal.init(util.title())
 
 // Backup
 if(arg[0] == 'backup') {
