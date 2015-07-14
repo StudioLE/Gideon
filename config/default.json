@@ -1,0 +1,7 @@
+{
+  "source": {
+    // Path to parent directory of potential backup sources
+    // Typically your vhost or server directory
+    "parent_directory": "sample"
+  }
+}
