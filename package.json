@@ -39,5 +39,6 @@
     "s3-upload-stream": "^1.0.7",
     "shelljs": "^0.5.1",
     "terminal-menu": "^2.1.1"
-  }
+  },
+  "bin" : "./cli.js"
 }
