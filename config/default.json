@@ -1,9 +1,24 @@
 {
-  
+
+  // Backup destination to use
+  "target": "s3",
+
+  // Backup format
+  // zip, tar or tar.gz
+  "format": "tar.gz",
+
+  // Options only used for gzip
+  "gzip_options": {
+    // Compression level
+    // 1 (min) - 9 (max)
+    "level": 9
+  },
+
   "source": {
     // Path to parent directory of potential backup sources
     // Typically your vhost or server directory
-    "parent_directory": "sample"
+    // Path can be either absolute or relative to current working directory
+    "parent_directory": "/srv"
   },
 
   "destination": {
@@ -26,13 +41,11 @@
     },
     "local": {
 
-      // Local directory
-      "directory": "output"
+      // Local directory to export to
+      // Path can be either absolute or relative to current working directory
+      "directory": "/srv/lib/backups"
     }
   },
-
-  // Which destination to use
-  "target": "s3",
 
   // Directories to exclude
   "exclude_directories": [
@@ -41,14 +54,9 @@
     ".git"
   ],
 
-  // Backup format
-  // zip, tar or tar.gz
-  "format": "tar.gz",
-
-  // Options only used for gzip
-  "gzip_options": {
-    // Compression level
-    // 1 (min) - 9 (max)
-    "level": 9
-  }
+  // Possible .env directories
+  "dotenv_directories": [
+    "october",
+    "laravel"
+  ]
 }

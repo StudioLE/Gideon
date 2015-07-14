@@ -14,7 +14,7 @@ Gideon has a number of key features making it the perfect utility for backing up
 
 The application requires Node.js and npm to be installed, instructions can be found at [nodejs.org](http://nodejs.org/).
 
-With node installed just run the following to install Gideon globally.
+With node installed run the following to install Gideon globally.
 
 ```
 npm install -g gideon
@@ -25,21 +25,19 @@ Configuration options are available in `config/default.json`.
 
 ## Usage
 
-At present the following operations are only available from within the gideon directory.
-
 Wizard selection
 ```
-node cli
+gideon
 ```
 
 Run the backup wizard
 ```
-node cli backup
+gideon backup
 ```
 
 Run the restore wizard
 ```
-node cli restore
+gideon restore
 ```
 
 ## Roadmap / Todo
