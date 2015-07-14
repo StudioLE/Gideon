@@ -8,13 +8,31 @@
 
   "destination": {
     "s3": {
-      // S3 account details
+
+      // S3 access key id
+      "accessKeyId": "AWS_ACCESS_KEY_ID",
+
+      // S3 access key secret
+      "secretAccessKey": "AWS_ACCESS_KEY_SECRET",
+
+      // S3 region
+      "region": "eu-west-1",
+
+      // S3 bucket
+      "bucket": "S3_BUCKET",
+
+      // S3 directory
+      "directory": ""
     },
     "local": {
+
       // Local directory
       "directory": "output"
     }
   },
+
+  // Which destination to use
+  "target": "s3",
 
   // Backup format
   // zip, tar or tar.gz
