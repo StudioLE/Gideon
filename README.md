@@ -47,7 +47,7 @@ node cli restore
 - [x] Stunning terminal interface
 - [x] Archive directory
 - [ ] Folder filter (bower_components, node_modules, .git)
-- [ ] Mysql Dump
+- [x] Mysql Backup
 
 ## Contributing
 
