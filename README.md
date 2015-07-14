@@ -45,8 +45,8 @@ node cli restore
 ## Roadmap / Todo
 
 - [x] Stunning terminal interface
-- [x] Archive directory
-- [ ] Folder filter (bower_components, node_modules, .git)
+- [x] Archive directory (zip, tar & gzip)
+- [x] Exclude directories (bower_components, node_modules, .git)
 - [x] Mysql Backup
 
 ## Contributing

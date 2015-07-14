@@ -34,6 +34,13 @@
   // Which destination to use
   "target": "s3",
 
+  // Directories to exclude
+  "exclude_directories": [
+    "node_modules",
+    "bower_components",
+    ".git"
+  ],
+
   // Backup format
   // zip, tar or tar.gz
   "format": "tar.gz",
