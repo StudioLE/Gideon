@@ -33,6 +33,7 @@
     "chalk": "^1.1.0",
     "config": "^1.14.0",
     "dotenv": "^1.2.0",
+    "humanize": "0.0.9",
     "lodash": "^3.10.0",
     "shelljs": "^0.5.1",
     "terminal-menu": "^2.1.1"

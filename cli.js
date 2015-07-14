@@ -1,5 +1,6 @@
 // App modules
 var backup = require('./lib/backup')
+var restore = require('./lib/restore')
 var menu = require('./lib/menu')
 
 // Get command line args

@@ -1,7 +1,29 @@
 {
+  
   "source": {
     // Path to parent directory of potential backup sources
     // Typically your vhost or server directory
     "parent_directory": "sample"
+  },
+
+  "destination": {
+    "s3": {
+      // S3 account details
+    },
+    "local": {
+      // Local directory
+      "directory": "output"
+    }
+  },
+
+  // Backup format
+  // zip, tar or tar.gz
+  "format": "tar.gz",
+
+  // Options only used for gzip
+  "gzip_options": {
+    // Compression level
+    // 1 (min) - 9 (max)
+    "level": 9
   }
 }
