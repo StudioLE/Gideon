@@ -8,7 +8,7 @@ Gideon has a number of key features making it the perfect utility for backing up
 - Filtering - By default `bower_components`, `node_modules` & `.git` are automatically ignored
 - MySQL Backup - Include a fresh mysql_dump with the backup
 - .env support - Database details are automatically loaded from .env files in common locations
-- Stunning terminal interface
+- Stunning terminal interface - Gideon uses [Sqwk](https://github.com/StudioLE/sqwk) to provide an intuitive interface
 
 ## Installation
 
@@ -19,9 +19,22 @@ With node installed run the following to install Gideon globally.
 ```
 npm install -g gideon
 ```
+
+Or for the latest development release
+
+```
+npm install -g https://github.com/StudioLE/Gideon/archive/master.tar.gz
+```
+
 ## Configuration
 
-Configuration options are available in `config/default.json`.
+Gideon uses [node-config](https://github.com/lorenwest/node-config) so it's highly configurable. I recommend copying the `config/default.json` file to `config/local.json` and editing that so that your changes are not overwritten by future updates.
+
+```
+cd /usr/lib/node_modules/gideon
+cp config/default.json config/local.json
+nano config/local.json
+```
 
 ## Usage
 
@@ -49,4 +62,4 @@ gideon restore
 
 ## Contributing
 
-I'm always on the look out for collaborators so feel free to suggest new features, get in touch or just fork at will.
+I'm always on the look out for collaborators so feel free to suggest new features, log an issue or just fork at will.

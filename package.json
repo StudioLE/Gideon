@@ -37,7 +37,7 @@
     "humanize": "0.0.9",
     "lodash": "^3.10.0",
     "s3-upload-stream": "^1.0.7",
-    "terminal-menu": "^2.1.1"
+    "sqwk": "^0.2.0-alpha"
   },
   "main": "lib/cli.js",
   "scripts": {

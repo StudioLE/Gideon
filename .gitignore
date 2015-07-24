@@ -2,4 +2,5 @@
 /config/local*
 /sample
 /output
+/backups
 /sftp-config.json
