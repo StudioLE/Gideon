@@ -1,6 +1,6 @@
 {
   "name": "gideon",
-  "version": "1.0.0-alpha",
+  "version": "0.1.0",
   "description": "A command line utility to archive a directory and upload it to S3",
   "keywords": [
     "backup",

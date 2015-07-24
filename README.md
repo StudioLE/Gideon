@@ -55,10 +55,11 @@ gideon restore
 
 ## Roadmap / Todo
 
-- [x] Stunning terminal interface
-- [x] Archive directory (zip, tar & gzip)
-- [x] Exclude directories (bower_components, node_modules, .git)
-- [x] Mysql Backup
+The following items will be completed before the 1.0.0 release
+
+- [ ] Restore from local
+- [ ] Restore from S3
+- [ ] Run specific backup directly
 
 ## Contributing
 

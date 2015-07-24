@@ -1,6 +1,7 @@
 {
 
   // Backup destination to use
+  // local or s3
   "target": "s3",
 
   // Backup format
