@@ -63,6 +63,19 @@ Config parameters can be defined on the command line as follows
 gideon backup --NODE_CONFIG='{"target":"s3"}'
 ```
 
+### Cron
+
+As an example you could use the following cron job to run a backup of `/srv/example.com` including it's database at 3am every day.
+```
+0 3 * * * /usr/bin/gideon backup example.com yes
+```
+
+Or for a weekly backup every Monday
+
+```
+0 3 * * 1 /usr/bin/gideon backup example.com yes
+```
+
 ## Roadmap / Todo
 
 The following items will be completed before the 1.0.0 release
@@ -71,6 +84,9 @@ The following items will be completed before the 1.0.0 release
 - [ ] Restore from local
 - [ ] Restore from S3
 - [x] Run specific backup directly
+- [ ] Log backups with winston
+- [ ] List backup contents
+- [ ] Verify backup contents
 
 ## Contributing
 
