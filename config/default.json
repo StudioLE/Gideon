@@ -38,13 +38,23 @@
       "bucket": "S3_BUCKET",
 
       // S3 directory
-      "directory": "backups"
+      "directory": "backups",
+
+      // Make backup file name unique
+      // By appending the current datetime
+      // Use false if versioning is enabled on the bucket
+      "unique_name": true
     },
     "local": {
 
       // Local directory to export to
       // Path can be either absolute or relative to current working directory
-      "directory": "/srv/lib/backups"
+      "directory": "/srv/lib/backups",
+
+      // Make backup file name unique
+      // By appending the current datetime
+      // Use false to overwrite previous backups
+      "unique_name": true
     }
   },
 
