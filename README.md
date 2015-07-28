@@ -48,6 +48,11 @@ Run the backup wizard
 gideon backup
 ```
 
+Run a named backup
+```
+gideon backup $DIRECTORY_NAME [$INCLUDE_DB y/n]
+```
+
 Run the restore wizard
 ```
 gideon restore
@@ -65,7 +70,7 @@ The following items will be completed before the 1.0.0 release
 - [ ] Write tests
 - [ ] Restore from local
 - [ ] Restore from S3
-- [ ] Run specific backup directly
+- [x] Run specific backup directly
 
 ## Contributing
 
