@@ -53,10 +53,16 @@ Run the restore wizard
 gideon restore
 ```
 
+Config parameters can be defined on the command line as follows
+```
+gideon backup --NODE_CONFIG='{"target":"s3"}'
+```
+
 ## Roadmap / Todo
 
 The following items will be completed before the 1.0.0 release
 
+- [ ] Write tests
 - [ ] Restore from local
 - [ ] Restore from S3
 - [ ] Run specific backup directly
