@@ -38,7 +38,7 @@
       "bucket": "S3_BUCKET",
 
       // S3 directory
-      "directory": ""
+      "directory": "backups"
     },
     "local": {
 
